@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 /**
-* entry-Entry point
+*main -Entry point
 * Return:0(success)
 */
 int main(void)
@@ -15,6 +15,7 @@ int main(void)
 	{
 	putchar(i);
 	}
+	putchar('0' + 10);
 
 	return(0);
 }
