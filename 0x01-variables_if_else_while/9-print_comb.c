@@ -5,15 +5,16 @@
  * Return:0(success)
  */
 int main(void)
-{	int i = 48;
-	putchar(0 + 48);
-	i++;
-	do {
-		putchar(0 + 44);
+{	int i;
+	for (i = 48; i < 58; i++)
+	{
+		putchar(i);
+		if (i != 57)
+		{
+		putchar(',');
 		putchar(0 + 32);
-		putchar(0 + i);
-		i++;
-	} while (i < 58);
+		}
+	}
 	putchar(0 + 10);
 	return (0);
 }
