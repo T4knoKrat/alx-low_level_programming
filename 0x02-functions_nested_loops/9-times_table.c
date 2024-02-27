@@ -13,12 +13,9 @@ void times_table(void)
 		for (y = 0; y <= 9; y++)
 		{
 			int product = x * y;
-			int pcount = 0;
-			pcount++;
 
 			if ((product / 10) == 0)
 			{
-			
 				_putchar((product + '0'));
 				_putchar(',');
 				_putchar(' ');
