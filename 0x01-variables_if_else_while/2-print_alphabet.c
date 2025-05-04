@@ -1,20 +1,19 @@
 #include<stdio.h>
 #include<stdlib.h>
 /**
-* main-Entry point
-* Return: 0(success)
-*
+*main-Entry point
+*Return:0(success)
 */
 int main(void)
-{	
-	char i;
-	for(i = 'a';i <= 'z';i++)
+{
+	char ch = 97;
+
+	for (ch >= 97; ch <= 122; ch++)
 	{
-	putchar(i);
+		putchar(ch);
 	}
 
-	printf("\n");
+	putchar('\n');
 
 	return (0);
-
 }
