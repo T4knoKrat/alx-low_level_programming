@@ -21,7 +21,7 @@ int main(void)
 	}
 	if (x >= 5)
 	{
-		printf("greater than  5\n");
+		printf("greater than 5\n");
 	}
 	else if ((x <= 6) && (x != 0))
 	{
