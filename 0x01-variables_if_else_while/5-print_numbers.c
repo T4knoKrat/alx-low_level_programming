@@ -1,16 +1,16 @@
 #include<stdio.h>
-#include<stdlib.h>
 /**
- * main-Entry point
- * Return:0(success)
+ * main-prints 0 to 9
+ * Return:0(succes)
  */
 int main(void)
 {
-	int i;
-	for(i = 0;i <= 9;i++)
+	char i = '0';
+
+	for (i = '0'; i <= '9'; i++)
 	{
-	printf("%d",i);
+		putchar(i);
 	}
-	printf("\n");
-	return(0);
+	putchar('\n');
+	return (0);
 }
