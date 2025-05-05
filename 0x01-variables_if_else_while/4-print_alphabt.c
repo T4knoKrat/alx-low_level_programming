@@ -1,22 +1,21 @@
 #include<stdio.h>
-#include<stdlib.h>
 /**
-* main -Entry point
-* Return:0(success)
-*/
+ *main-prints lowercaase characters
+ *except e and q
+ *Return: 0(success)
+ */
 int main(void)
 {
-	char i = 'a';
-	
-	while(i <= 'z')
+	char ch = 'a';
+
+	while (ch <= 'z')
 	{
-	if (i != 'e'&& i != 'q')
-	{
-	putchar(i);
-	}
-	i++;
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+		}
+		ch++;
 	}
 	putchar('\n');
-	return(0);
-
+	return (0);
 }
