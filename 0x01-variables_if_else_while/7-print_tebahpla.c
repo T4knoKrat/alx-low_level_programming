@@ -1,18 +1,16 @@
 #include<stdio.h>
-#include<stdlib.h>
 /**
- * main - entry point
- * Return:0(Success)
+ * main-reverses lowercase alphabet
+ * Return:0(success)
  */
 int main(void)
 {
-	int i;
-	for(i = 'z';i >= 'a';i--)
+	char ch = 'z';
+
+	for (ch <= 'z'; ch >= 'a'; ch--)
 	{
-	putchar( i);
+		putchar(ch);
 	}
 	putchar('\n');
-	
-	return(0);
-
+	return (0);
 }
