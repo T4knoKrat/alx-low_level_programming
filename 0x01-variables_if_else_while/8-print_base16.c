@@ -1,20 +1,22 @@
 #include<stdio.h>
-#include<stdlib.h>
 /**
- * main-Entry point
+ * main-prints base 16 numbers in lowercase
  * Return:0(success)
  */
 int main(void)
-{	
-	int i;
-	for(i = 48; i <= 57; i++)
+{
+	char i = '0';
+	char j = 'a';
+
+	for (i = '0'; i <= '9'; i++)
 	{
-	putchar(0 + i);
+		putchar(i);
 	}
-	for(i = 'a';i <= 'f';i++)
-	putchar(i);
+
+	for (j = 'a'; j <= 'f'; j++)
+	{
+		putchar(j);
+	}
 	putchar('\n');
 	return (0);
-
 }
-
