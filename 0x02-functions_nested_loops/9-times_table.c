@@ -12,7 +12,10 @@ void times_table(void)
 		{
 			k = 0;
 			k = i * j;
-			if (k < 10)
+			if (k == 0)
+			{	
+			}
+			if (k < 10 && k != 0)
 			{
 				if (j != 9)
 				{
