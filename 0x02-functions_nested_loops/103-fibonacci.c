@@ -15,12 +15,14 @@ int main(void)
 	for (c = 0; c <= 4000000; c++)
 	{
 		l = j + k;
-		sum += l;
+		if (l % 2 == 0)
+		{
+			sum += l;
+		}
 		j = k;
 		k = l;
-		printf("%ld", sum);
-
 	}
+	printf("%ld", sum + 2);
 	printf("\n");
 	return (0);
 
