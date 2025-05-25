@@ -10,11 +10,11 @@ int main(void)
 	long int n, p;
 
 	n = 612852475143;
-	for (p = 2; p <= n; fp++)
+	for (p = 2; p <= n; p++)
 	{
 		if (n % p == 0)
 		{
-			n /= fp;
+			n /= p;
 			p--;
 		}
 
