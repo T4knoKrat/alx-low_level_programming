@@ -1,23 +1,23 @@
+#include<stdio.h>
 #include"main.h"
 /**
-*char *_strcpy -function to convert string to integer
-*@dest:string
-*@src:string
-*Return:dest
-*/
+ * _strcpy-copies a string from a source 
+ * to destination returning a pointer to 
+ * destination.
+ * @dest:pointer to destination
+ * @src:pointer to source
+ * Return:pointer to destination
+ */
 char *_strcpy(char *dest, char *src)
 {
-	int len = 0;
-	int x = 0;
+	char *ptr = dest;
 
-	while (*(src + len) != '\0')
+	while (*src != '\0')
 	{
-		len++;
+		*dest = *src;
+		dest++;
+		src++;
 	}
-	for ( ; x < len; x++)
-	{
-		dest[x] = src[x];
-	}
-	dest[len] = '\0';
-	return (dest);
+	*dest = '\0';
+	return (ptr);
 }
