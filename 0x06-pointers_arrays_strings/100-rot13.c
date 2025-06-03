@@ -17,6 +17,7 @@ char *rot13(char *s)
 			if (s[i] == letters[j])
 			{
 				s[i] = replace[j];
+				break;
 			}
 		}
 	}
