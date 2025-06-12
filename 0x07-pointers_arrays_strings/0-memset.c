@@ -1,7 +1,7 @@
 #include"main.h"
 /**
  * _memset-fill block of memory specific value
- * @a:starting adress of string
+ * @s:starting adress of string
  * @b:character to fill
  * @n:number of bytes to be changed
  * Return:pointer tochanged string
