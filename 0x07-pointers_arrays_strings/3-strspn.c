@@ -1,28 +1,24 @@
-#include "main.h"
+#include"main.h"
 /**
- * _strspn - Entry
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
+ * _strspn-gets the lenth of a prefix substring
+ *@s:string to compare
+ *@accept:string to compare from
+ *Return: i byte size
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0;
-	int r;
+	unsigned int i = 0, j;
 
-	while (*s)
+	while (s[i] != '\0')
 	{
-		for (r = 0; accept[r]; r++)
+	        for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*s == accept[r])
-			{
-				n++;
+			if (s[i] == accept[j])
 				break;
-			}
-			else if (accept[r + 1] == '\0')
-				return (n);
 		}
-		s++;
+		if (accept[j] == '\0')
+		return i; 
+		i++;
 	}
-	return (n);
+	return i;
 }
